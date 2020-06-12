@@ -16,6 +16,3 @@ node.data: true
 discovery.zen.ping.unicast.hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
 #discovery.seed_hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
 
-# to avoid swapping
-bootstrap.memory_lock: true
-
