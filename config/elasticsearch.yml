@@ -1,0 +1,22 @@
+# cluster setting
+cluster.name: "hb-es-cluster"
+cluster.initial_master_nodes: ["10.10.125.231"]
+
+# node name
+node.name: "hb-es-node1"
+
+# host network setting
+network.host: 10.10.125.231
+
+# node attribute setting
+node.master: true
+node.data: true
+
+# detail the private IPs of your nodes:
+discovery.zen.ping.multicast.enabled: false
+discovery.zen.ping.unicast.hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
+#discovery.seed_hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
+
+# to avoid swapping
+bootstrap.mlockall: true
+
