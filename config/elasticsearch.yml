@@ -3,10 +3,10 @@ cluster.name: "hb-es-cluster"
 cluster.initial_master_nodes: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
 
 # node name
-node.name: "hb-es-node2"
+node.name: "hb-es-node1"
 
 # host network setting
-network.host: 10.10.125.232
+network.host: 10.10.125.231
 
 # node attribute setting
 node.master: true
