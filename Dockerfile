@@ -9,7 +9,7 @@ USER root
 SHELL ["/bin/bash", "-c"]
 
 # vm.max 설정
-RUN echo "vm.max_map_count=262144" >> /etc/sysctl.conf
+RUN chmod 777 /etc/sysctl.conf && echo "vm.max_map_count=262144" >> /etc/sysctl.conf
 
 # elasticsearch.yml 설치
 COPY config/elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
